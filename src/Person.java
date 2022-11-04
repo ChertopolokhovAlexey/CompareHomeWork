@@ -1,7 +1,7 @@
 public class Person implements Comparable<Person> {
-    private String name;
-    private String surname;
-    private int age;
+    protected String name;
+    protected String surname;
+    protected int age;
 
     public Person(String surname, String name, int age) {
         this.name = name;
@@ -9,13 +9,10 @@ public class Person implements Comparable<Person> {
         this.age = age;
     }
 
-    public int getAge() {
+    public int setAge() {
         return age;
     }
 
-    public String getName() {
-        return surname;
-    }
 
     public String setSurname() {
         return surname;

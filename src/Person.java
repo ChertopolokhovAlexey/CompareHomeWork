@@ -9,11 +9,6 @@ public class Person implements Comparable<Person> {
         this.age = age;
     }
 
-    public int setAge() {
-        return age;
-    }
-
-
     public String setSurname() {
         return surname;
     }

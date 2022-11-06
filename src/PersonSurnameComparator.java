@@ -15,8 +15,3 @@ public class PersonSurnameComparator implements Comparator<Person> {
         return result == 0 ? o1.compareTo(o2): result;
     }
 }
-// мой вариант доработанной работы который я хотел сдавать:
-//if (first > size) {first = size;}
-//if (second > size) {second = size;}
-//if (first == second) {return Integer.compare(o1.setAge(), o2.setAge());}
-//return Integer.compare(first, second);

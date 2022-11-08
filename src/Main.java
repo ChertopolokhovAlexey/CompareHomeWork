@@ -19,7 +19,7 @@ public class Main {
         person.add(new Person("ibn al Azi", "Alladin", 30));
         person.add(new Person("fon Sidorov", "Piter", 17));
 
-        Predicate<Person> predicate = (Person o1) -> Integer.compare(o1.age, 18) < 0;
+        Predicate<Person> predicate = (p1) -> Integer.compare(p1.age, 18) < 0;
         person.removeIf(predicate);
 
 

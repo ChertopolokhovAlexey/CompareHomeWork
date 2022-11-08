@@ -19,11 +19,11 @@ public class Main {
         person.add(new Person("ibn al Azi", "Alladin", 30));
         person.add(new Person("fon Sidorov", "Piter", 18));
 
-        Comparator<Person> comparator = (Person o2, Person o1) -> {
-            int first = o1.setSurname().split("\\P{IsAlphabetic}+").length;
-            int second = o2.setSurname().split("\\P{IsAlphabetic}+").length;
+        Comparator<Person> comparator = (p2, p1) -> {
+            int first = p1.setSurname().split("\\P{IsAlphabetic}+").length;
+            int second = p2.setSurname().split("\\P{IsAlphabetic}+").length;
             int result = first >= SIZE && second >= SIZE ? 0 : Integer.compare(first, second);
-            return result == 0 ? o1.compareTo(o2) : result;
+            return result == 0 ? p1.compareTo(p2) : result;
         };
 
         Collections.sort(person, comparator);
